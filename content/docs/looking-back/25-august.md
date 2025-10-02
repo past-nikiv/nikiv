@@ -8,8 +8,6 @@ Nearly 3 month since last entry. Been busy building.
 
 Best thing that has happened since last time I wrote was that I found a genuinely amazing team to build things with.
 
-Designer, development all covered by great people.
+Designer, development all covered by great people. Let's hope it works out.
 
-Now I am focusing on building out [GPTON](https://gpton.co) as its first ever venture that actually found some investor. Will start of as a game platform, slowly morphing into messenger with some AI features.
-
-I also deeply fell in love with [Jazz](https://jazz.tools). In fact both 1Focus & GPTON are fully built with Jazz (and [Reatom](https://v1000.reatom.dev)).
+I also deeply fell in love with [Jazz](https://jazz.tools). 1Focus is fully built with Jazz (and [Reatom](https://v1000.reatom.dev)).
