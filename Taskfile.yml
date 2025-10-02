@@ -23,14 +23,29 @@ tasks:
         fi
         bun --version >/dev/null
         tmp_log="$(mktemp)"
-        trap 'rm -f "$tmp_log"' EXIT
-        if ! bun install --frozen-lockfile >"$tmp_log" 2>&1; then
+        cleanup() {
+          rm -f "$tmp_log"
+        }
+        trap cleanup EXIT
+        ( bun install --frozen-lockfile >"$tmp_log" 2>&1 ) &
+        bun_pid=$!
+        spinner='|/-\'
+        i=0
+        printf 'Installing dependencies '
+        while kill -0 "$bun_pid" >/dev/null 2>&1; do
+          printf '\rInstalling dependencies %s' "${spinner:i++%${#spinner}:1}"
+          sleep 0.1
+        done
+        wait "$bun_pid"
+        status=$?
+        printf '\r\033[K'
+        if [ "$status" -ne 0 ]; then
           cat "$tmp_log" >&2
-          exit 1
+          exit "$status"
         fi
-        rm -f "$tmp_log"
         trap - EXIT
-        echo "✔️ you are setup"
+        cleanup
+        printf '✔️ you are setup\n'
 
   dev:
     desc: Start the Next.js dev server with Bun.
