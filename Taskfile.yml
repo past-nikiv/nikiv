@@ -17,13 +17,20 @@ tasks:
       - |
         set -euo pipefail
         if ! command -v bun >/dev/null 2>&1; then
-          echo "Bun runtime not found in PATH."
-          echo "Install it via https://bun.sh/docs/installation"
+          echo "Bun runtime not found in PATH." >&2
+          echo "Install it via https://bun.sh/docs/installation" >&2
           exit 1
         fi
         bun --version >/dev/null
-        bun install --frozen-lockfile
-        echo "Dependencies installed for ${PROJECT_NAME:-{{.project_name}}}."
+        tmp_log="$(mktemp)"
+        trap 'rm -f "$tmp_log"' EXIT
+        if ! bun install --frozen-lockfile >"$tmp_log" 2>&1; then
+          cat "$tmp_log" >&2
+          exit 1
+        fi
+        rm -f "$tmp_log"
+        trap - EXIT
+        echo "✔️ you are setup"
 
   dev:
     desc: Start the Next.js dev server with Bun.
