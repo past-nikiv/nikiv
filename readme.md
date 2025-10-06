@@ -2,19 +2,19 @@
 
 ## Setup
 
-Install [Task](https://taskfile.dev/docs/installation). Then run `task setup` & follow instructions until it says `✔️ you are setup`.
+Install [task](https://taskfile.dev/docs/installation). Then run `task setup` & follow instructions until it says `✔️ you are setup`.
 
 ## Dev
 
 Run `task dev` to start server & open localhost.
 
-## All commands
+## Commands
 
 Run `task` to see all possible commands.
 
 ## Contributing
 
-Any PR to improve is welcome. [codex](https://github.com/openai/codex) & [cursor](https://cursor.com) are nice for dev. Great **working** & **useful** patches are most appreciated (ideally).
+Any PR to improve is welcome. [codex](https://github.com/openai/codex) & [cursor](https://cursor.com) are nice for dev. Great **working** & **useful** patches are most appreciated (ideally). Issues with bugs or ideas are welcome too.
 
 ### 🖤
 
