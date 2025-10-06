@@ -6,7 +6,7 @@ Install [task](https://taskfile.dev/docs/installation). Then run `task setup` & 
 
 ## Dev
 
-Run `task dev` to start server & open localhost.
+Run `task dev` to start server & open `localhost:`.
 
 ## Commands
 
