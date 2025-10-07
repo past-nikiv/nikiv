@@ -59,7 +59,7 @@ function GithubCornerLink() {
       aria-label="nikiv GitHub repository"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 left-4 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white/90 text-neutral-700 shadow-sm transition hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-700 dark:bg-neutral-900/90 dark:text-neutral-200 dark:hover:text-white dark:focus-visible:outline-neutral-500"
+      className="fixed bottom-4 left-4 z-50 inline-flex items-center justify-center rounded-full border border-neutral-200/80 p-1.5 text-neutral-500 transition hover:border-neutral-400 hover:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-700/80 dark:text-neutral-400 dark:hover:border-neutral-500 dark:hover:text-white dark:focus-visible:outline-neutral-500"
     >
       <GithubIcon className="h-5 w-5" />
       <span className="sr-only">Open nikiv GitHub repository</span>
