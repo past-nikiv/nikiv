@@ -6,15 +6,14 @@ My macOS/iOS setup (with config) is described [here](/config).
 
 ### Websites
 
-- [React](https://react.dev) to render, [Jazz](https://jazz.tools)/[Reatom](https://v1000.reatom.dev) for state
-- Deployed on [Vercel](https://vercel.com)
-- Also use [Blade](https://blade.im) with its ORM
+- [Blade](https://blade.im) for all websites with [React](https://react.dev)
+- [Jazz](https://jazz.tools) for when I need collabortive state & [Reatom](https://v1000.reatom.dev) for more complex client interactions
+- Deployed on [Vercel](https://vercel.com) or [Cloudflare](https://cloudflare.com)
 - [Panda CSS](https://panda-css.com) or [Tailwind](https://tailwindcss.com) for styling
-- [Better Auth](https://better-auth.com) for auth
 
 ### HTTP
 
-- TS: [Hono](https://hono.dev) (distributed with Cloudflare) or [Encore](https://encore.dev) (single origin on GCP) depending on task
+- TS: [Hono](https://hono.dev) (distributed with Cloudflare) or [Encore](https://encore.dev) (single origin on GCP) depending on task. [Elysia](https://elysiajs.com) is nice too.
 - Go: [Encore](https://encore.dev)
 - Rust: [Axum](https://github.com/tokio-rs/axum)
 
@@ -28,8 +27,7 @@ My macOS/iOS setup (with config) is described [here](/config).
 
 - [Expo](https://expo.dev) + Expo plugins
 - [Unistyles](https://unistyl.es) for styles
-- [Jazz](https://jazz.tools)/[Reatom](https://v1000.reatom.dev) for state
-- [Better Auth](https://better-auth.com) for auth
+- Usually talking to Hono endpoints that serve [Blade](https://blade.im). Using [Jazz](https://jazz.tools) & [Reatom](https://v1000.reatom.dev) where appropriate
 
 ### Desktop
 
@@ -37,7 +35,7 @@ My macOS/iOS setup (with config) is described [here](/config).
 
 ### Infra
 
-- Manage services with [Alchemy](https://alchemy.run)
+- Manage services with [Alchemy](https://alchemy.run), deployed often on AWS or Cloudflare
 
 ### Analytics
 
