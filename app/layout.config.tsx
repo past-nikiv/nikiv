@@ -9,7 +9,24 @@ import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared"
  */
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: "nikiv.dev",
+    title: (
+      <span className="flex items-center gap-1.5">
+        <span aria-hidden>{"\uD83C\uDFE1"}</span>
+        <span className="sr-only">nikiv.dev</span>
+      </span>
+    ),
+    children: (
+      <a
+        href="https://wiki.nikiv.dev"
+        aria-label="wiki.nikiv.dev"
+        className="inline-flex items-center text-lg leading-none ms-2"
+        title="wiki.nikiv.dev"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {"\uD83C\uDF33"}
+      </a>
+    ),
   },
   links: [
     {
