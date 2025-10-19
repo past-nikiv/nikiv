@@ -2,7 +2,7 @@ import "./global.css"
 import { RootProvider } from "fumadocs-ui/provider/next"
 import { Inter } from "next/font/google"
 import type { ReactNode } from "react"
-import { Metadata } from "next"
+import type { Metadata } from "next"
 import { OpenPanelComponent } from "@openpanel/nextjs"
 
 const inter = Inter({
@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   },
   keywords: [
     "nikiv",
+    "nikivdev",
     "nikita voloboev",
     "personal website",
     "docs",

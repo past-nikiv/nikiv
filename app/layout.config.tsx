@@ -16,16 +16,18 @@ export const baseOptions: BaseLayoutProps = {
       </span>
     ),
     children: (
-      <a
-        href="https://wiki.nikiv.dev"
-        aria-label="wiki.nikiv.dev"
-        className="inline-flex items-center text-lg leading-none ms-2"
-        title="wiki.nikiv.dev"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {"\uD83C\uDF33"}
-      </a>
+      <span className="inline-flex items-center gap-1 ms-1 me-auto">
+        <a
+          href="https://wiki.nikiv.dev"
+          aria-label="wiki.nikiv.dev"
+          className="inline-flex items-center text-lg leading-none"
+          title="wiki.nikiv.dev"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {"\uD83C\uDF33"}
+        </a>
+      </span>
     ),
   },
   links: [

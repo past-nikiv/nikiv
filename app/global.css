@@ -3,3 +3,19 @@
 @import "fumadocs-ui/css/preset.css";
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
+
+#nd-subnav a[href="/"] {
+  margin-inline-end: 0;
+}
+
+#nd-subnav a[aria-label="wiki.nikiv.dev"] {
+  margin-inline-start: 0.25rem;
+}
+
+#nd-sidebar a[href="/"] {
+  margin-inline-end: 0;
+}
+
+#nd-sidebar a[aria-label="wiki.nikiv.dev"] {
+  margin-inline-start: 0.25rem;
+}
