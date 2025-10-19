@@ -20,12 +20,12 @@ export const baseOptions: BaseLayoutProps = {
         <a
           href="https://wiki.nikiv.dev"
           aria-label="wiki.nikiv.dev"
-          className="inline-flex items-center text-lg leading-none"
+          className="inline-flex items-center text-base leading-none"
           title="wiki.nikiv.dev"
           target="_blank"
           rel="noreferrer"
         >
-          {"\uD83C\uDF33"}
+          {"\uD83C\uDF31"}
         </a>
       </span>
     ),
